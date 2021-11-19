@@ -50,7 +50,7 @@ class App extends React.Component {
 
     if (typeof input["phone"] !== "undefined") {
 
-      var pattern = new RegExp(/^[0-9\b]+$/);
+      var pattern = new RegExp(/^[7-9]\d{9}]+$/);
       if (!pattern.test(input["phone"])) {
         isValid = false;
         errors["phone"] = "Please enter valid phone number";
